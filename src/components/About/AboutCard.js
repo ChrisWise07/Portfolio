@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import { ImPointRight } from "react-icons/im";
+import { GoArrowRight } from "react-icons/go";
 
 function AboutCard() {
   return (
@@ -8,33 +8,30 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi Everyone, I am <span className="purple">Soumyajit Behera </span>
-            from <span className="purple"> Bhubaneswar, India.</span>
+            I am Chris Wise from Canberra, Australia. I currently server as a Royal Australian Air Force Officer. 
+            I have a Bachelor of Computing and Cyber Security (Honours) degree from the University of New South Wales. 
+            I am interested in reading and learning about AI, mathematics, computer science, quantum physics.
+            For my honours thesis, I investigated the application of machine learning to quantum computing.  
+            I am deeply fascinated by AI and want to use AI to accelerate science. 
+            My longterm goal is to work for Google DeepMind using AI for fusion and renewable energy research, and or longevity research.
             <br />
-            I am currently employed as a software developer at Juspay.
             <br />
-            I have completed Integrated MSc (IMSc) in Maths and Computing at BIT
-            Mesra.
-            <br />
-            <br />
-            Apart from coding, some other activities that I love to do!
+            My personal interests include
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <GoArrowRight /> Mountaineering and Rock Climbing
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs
+              <GoArrowRight /> Health and Wellbeing
             </li>
             <li className="about-activity">
-              <ImPointRight /> Travelling
+              <GoArrowRight /> Self-Improvement
+            </li>
+            <li className="about-activity">
+              <GoArrowRight /> Music Production
             </li>
           </ul>
-
-          <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
-          </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
         </blockquote>
       </Card.Body>
     </Card>

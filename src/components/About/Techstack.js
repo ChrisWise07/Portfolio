@@ -1,71 +1,46 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
-import {
-  DiJavascript1,
-  DiReact,
-  DiNodejs,
-  DiMongodb,
-  DiPython,
-  DiGit,
-  DiJava,
-} from "react-icons/di";
-import {
-  SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
-} from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
+import { DiJavascript1, DiReact, DiPython, DiGit, DiJava, DiLinux } from "react-icons/di";
+import { SiC, SiGnubash } from "react-icons/si";
+import { AiOutlineConsoleSql } from "react-icons/ai";
+import FlipCard from "./FlipCard"; // Import the FlipCard component
 
-function Techstack() {
+function LanguageProficiencies() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <FlipCard icon={<DiPython />} text="Python" textSize="0.5em" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <FlipCard icon={<DiLinux />} text="Linux CLI" textSize="0.5em" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+        <FlipCard icon={<SiGnubash />} text="Bash" textSize="0.5em" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <FlipCard icon={<DiGit />} text="Git" textSize="0.5em" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <FlipCard icon={<AiOutlineConsoleSql />} text="SQL" textSize="0.5em" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+        <FlipCard icon={<DiJavascript1 />} text="JavaScript" textSize="0.5em" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <FlipCard icon={<DiReact />} text="React" textSize="0.5em" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <FlipCard icon={<DiJava />} text="Java" textSize="0.5em" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        <FlipCard icon={<CgCPlusPlus />} text="C++" textSize="0.7em" />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <FlipCard icon={<SiC />} text="C" textSize="1.0em" />
       </Col>
     </Row>
   );
 }
 
-export default Techstack;
+export default LanguageProficiencies;

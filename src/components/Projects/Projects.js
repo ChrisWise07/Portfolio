@@ -2,12 +2,13 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import perception from "../../Assets/Projects/collective_perception.png";
+import patch from "../../Assets/Projects/robust_dpatch_imperceptible_patch_compare.png";
+import QC_circuit_errors from "../../Assets/Projects/QC_circuit_errors.png";
+import GreyBoxArch from "../../Assets/Projects/grey_box_arch.png";
+import QuantumSpace from "../../Assets/Projects/quantum_space.png";
+import TransformerQubitSimDiagram from "../../Assets/Projects/transformer_qubit_sim_diagram.png";
+import "./Projects.css";
 
 function Projects() {
   return (
@@ -15,78 +16,131 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          Projects
         </h1>
-        <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
-        </p>
+        <h5 style={{ color: "var(--off-white)" }} >
+          Here are some of my completed and current projects.
+        </h5>
+        <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+        <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={TransformerQubitSimDiagram}
+              imgWidth="350px"
+              imgHeight="150px"
+              title="Transformer-based Qubit Simulator"
+              description="
+                  An encoder-only transformer is integrated into an open-quantum 
+                  system qubit simulator. The model learns to map white noise to 
+                  noise present on a quantum computer, where model output is 
+                  combined with control pulses to compute observable 
+                  expectations. This transformer-based qubit simulator can model 
+                  ground truth expectations with 99.97% accuracy. Control pulses
+                  are then optimised by back propagating through the trained
+                  transformer noise model. The control pulses achieve 99.89%
+                  process fidelity in a noisy environment.
+              "
+              inProgress={true}
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={QuantumSpace}
+              imgWidth="270px"
+              imgHeight="250px"
+              title="Quantum Feature Space of Qubit in Arbitrary Bath"
+              description="
+                  This work shows that the quantum noise operators may be 
+                  directly, accurately, and efficiently inferred using a 
+                  regression-based approach compared to more expensive deep
+                  learning approaches. This noise operator description admits an 
+                  efficient parameterisation; this parametrisation is refered
+                  to as the quantum feature space arising from an arbitrary 
+                  bath coupled to a qubit. This quantum feature space is shown 
+                  to be effective at classifying and characterising the noise
+                  processes describing qubit-bath interactions. 
+              "
+              pdfLink="/assets/Quantum_Feature_Space.pdf"
+              inProgress={true}
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={GreyBoxArch}
+              imgWidth="350px"
+              imgHeight="225px"
+              title="Machine Learning for High Fidelity Qubit Control"
+              description="
+                  My honours thesis extended a mathematical model of 
+                  qubit-environment interactions and developed a method to 
+                  deduce these interactions from experimental data. In this 
+                  work, deep learning architectures that map control pulses to 
+                  qubit-environment interactions were investigated. 
+                  Gradient-free optimisers were used to optimise control pulses 
+                  that achieve over 99% process fidelity in noisy environments. 
+              "
+              ghLink="https://github.com/ChrisWise07/ML-for-Qubit-Control-Honours-Thesis"
+              pdfLink="/assets/ML_for_Qubit_Control.pdf"
+            />
+          </Col>
+        </Row>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              imgPath={QC_circuit_errors}
+              imgWidth="275px"
+              imgHeight="225px"
+              title="PSO to Infer Quantum Computer Circuit Errors"
+              description="
+                Quantum computer circuit error parameters were inferred using 
+                PSO to optimise a circuit error model. The MSE between the 
+                model's simulated data and experimental data was reduced by a 
+                magnitude of ten. The PSO algorithm was used to mitigate the 
+                effects of circuit errors. The PSO-optimised control parameters 
+                reduced the MSE between measured noisy data and ideal data by 
+                62%. 
+              "
+              ghLink="https://github.com/ChrisWise07/ZEIT3191-ML-Quantum-Computing"
+              pdfLink="/assets/PSO_for_QC_Errors.pdf"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={perception}
+              imgWidth="225px"
+              imgHeight="225px"
+              title="Developing Decentralised Resilience to Malicious Influence"
+              description="
+                ML was used to optimise agent actions in a collective perception 
+                problem. When performing opinion fusion, decentralised resilience 
+                was implemented by having agents dynamically weight received 
+                opinions. An updated collective perception simulation was 
+                developed in Python for this research.
+              "
+              ghLink="https://github.com/ChrisWise07/ZEIT3190-Swarm-Research"
+              arxivLink="https://arxiv.org/abs/2211.03063"
+              pdfLink="/assets/Decentralised_Resilience.pdf"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={patch}
+              imgWidth="325px"
+              imgHeight="225px"
+              title="Adversarial Patches to Camouflage Military Assets From CNNs"
+              description="
+                Developed a unique method that produces imperceptible patches 
+                capable of camouflaging large military assets from computer 
+                vision-enabled technologies. Patches were developed by 
+                maximising object detection loss whilst limiting the 
+                patch's colour perceptibility.
+              "
+              ghLink="https://github.com/ChrisWise07/imperceptible-patch-generator"
+              arxivLink="https://arxiv.org/abs/2202.08892"
+              pdfLink="/assets/Adversarial_Patches.pdf"
             />
           </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
 
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={editor}
-              isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={leaf}
-              isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={suicide}
-              isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={emotion}
-              isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
-            />
-          </Col>
         </Row>
       </Container>
     </Container>
