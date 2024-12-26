@@ -35,7 +35,7 @@ function Projects() {
                   combined with control pulses to compute observable 
                   expectations. This transformer-based qubit simulator can model 
                   ground truth expectations with 99.97% accuracy. Control pulses
-                  are then optimised by back propagating through the trained
+                  are then optimised by back-propagating through the trained
                   transformer noise model. The control pulses achieve 99.89%
                   process fidelity in a noisy environment.
               "
@@ -53,7 +53,7 @@ function Projects() {
                   directly, accurately, and efficiently inferred using a 
                   regression-based approach compared to more expensive deep
                   learning approaches. This noise operator description admits an 
-                  efficient parameterisation; this parametrisation is refered
+                  efficient parameterisation; this parametrisation is referred
                   to as the quantum feature space arising from an arbitrary 
                   bath coupled to a qubit. This quantum feature space is shown 
                   to be effective at classifying and characterising the noise
@@ -110,7 +110,7 @@ function Projects() {
               imgHeight="225px"
               title="Developing Decentralised Resilience to Malicious Influence"
               description="
-                ML was used to optimise agent actions in a collective perception 
+                RL was used to optimise agent actions in a collective perception 
                 problem. When performing opinion fusion, decentralised resilience 
                 was implemented by having agents dynamically weight received 
                 opinions. An updated collective perception simulation was 

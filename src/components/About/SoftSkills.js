@@ -1,9 +1,9 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import FlipCard from "./FlipCard";
-import { FaTasks, FaUsers, FaCompass, FaPuzzlePiece, FaRobot, FaFlag, FaLock, FaBrain } from "react-icons/fa";
+import { FaTasks, FaUsers, FaCompass, FaPuzzlePiece, FaFlag, FaLock, FaBrain} from "react-icons/fa";
 import { GiWeightLiftingUp } from "react-icons/gi";
-import { IoLogoElectron } from "react-icons/io5";
+
 
 function SoftSkills() {
   return (
@@ -32,12 +32,7 @@ function SoftSkills() {
       <Col xs={4} md={2} className="tech-icons">
         <FlipCard icon={<FaPuzzlePiece />} text="Problem-Solving" textSize="0.4em" />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FlipCard icon={<IoLogoElectron />} text="Quantum Computing" textSize="0.4em" />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FlipCard icon={<FaRobot />} text="AI & ML" textSize="0.4em" />
-      </Col>
+      
     </Row>
   );
 }

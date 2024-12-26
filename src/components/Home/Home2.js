@@ -16,13 +16,13 @@ function Home2() {
               About Me
             </h1>
             <p className="home-about-body">
-              I hold a Bachelor of Computing and Cyber Security (Honours).
+            I hold a Bachelor of Computing and Cyber Security (Honours).
               <br></br>
-              Graduating from the Australian Defence Force Academy, I currently serve as a RAAF Officer.
+            I currently serve as a Royal Australian Air Force Officer
               <br></br>
-              My interest lie in machine learning, quantum computing, and software engineering.
+            My interests lie in machine learning, quantum computing, and software engineering.
               <br></br>
-              I am deeply fascinated by AI and want to use AI to accelerate science.
+            AI deeply fascinates me, and my goal is to use it to accelerate science.
             </p>
           </Col>
         </Row>

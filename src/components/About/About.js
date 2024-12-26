@@ -41,7 +41,7 @@ function About() {
         <SoftSkills />
 
         <h1 className="project-heading">
-          Language Proficiencies
+          Technical Proficiencies
         </h1>
 
         <Techstack />
