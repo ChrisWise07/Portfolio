@@ -243,6 +243,8 @@ button:focus {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
+  margin-left: 13% !important;
+  /* margin-right: 10% !important; */
 }
 
 .heading {
@@ -391,6 +393,7 @@ button:focus {
 .footer-body {
   z-index: 1;
   text-align: center !important;
+  font-size: 1.35em !important;
 }
 
 @media (max-width: 767px) {
@@ -411,7 +414,7 @@ button:focus {
 }
 
 .footer-icons {
-  margin-top: 0.5em !important;
+  margin-top: 0.0em !important;
   margin-bottom: 0.5em !important;
   padding: 0 !important;
 }
@@ -620,6 +623,7 @@ button:focus {
   position: relative;
   border-radius: 15px;
   box-shadow: 15px 15px 40px rgb(0, 0, 0, 0.9);
+  margin-left: 15%; 
 }
 
 .about-img {

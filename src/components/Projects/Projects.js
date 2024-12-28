@@ -26,7 +26,7 @@ function Projects() {
             <ProjectCard
               imgPath={TransformerQubitSimDiagram}
               imgWidth="350px"
-              imgHeight="155px"
+              imgHeight="175px"
               title="Transformer-based Qubit Simulator"
               description="
                   An encoder-only transformer is integrated into an open-quantum 
@@ -45,7 +45,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={QuantumSpace}
-              imgWidth="270px"
+              imgWidth="275px"
               imgHeight="250px"
               title="Quantum Feature Space of Qubit in Arbitrary Bath"
               description="

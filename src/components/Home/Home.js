@@ -28,7 +28,7 @@ function Home() {
               <img
                 src={homeLogo}
                 alt="Profile Pic"
-                className="img-fluid main-profile-img"
+                className="main-profile-img"
                 style={{ maxHeight: "450px" }}
               />
             </Col>
