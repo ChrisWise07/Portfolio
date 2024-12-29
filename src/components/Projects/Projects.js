@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import perception from "../../Assets/Projects/collective_perception.png";
-import patch from "../../Assets/Projects/robust_dpatch_imperceptible_patch_compare.png";
-import QC_circuit_errors from "../../Assets/Projects/QC_circuit_errors.png";
-import GreyBoxArch from "../../Assets/Projects/grey_box_arch.png";
-import QuantumSpace from "../../Assets/Projects/quantum_space.png";
-import TransformerQubitSimDiagram from "../../Assets/Projects/transformer_qubit_sim_diagram.png";
+import perception from "../../Assets/Projects/collective_perception.webp";
+import patch from "../../Assets/Projects/robust_dpatch_imperceptible_patch_compare.webp";
+import QC_circuit_errors from "../../Assets/Projects/QC_circuit_errors.webp";
+import GreyBoxArch from "../../Assets/Projects/grey_box_arch.webp";
+import QuantumSpace from "../../Assets/Projects/quantum_space.webp";
+import TransformerQubitSimDiagram from "../../Assets/Projects/transformer_qubit_sim_diagram.webp";
 import "./Projects.css";
 
 function Projects() {
@@ -25,8 +25,8 @@ function Projects() {
         <Col md={4} className="project-card">
             <ProjectCard
               imgPath={TransformerQubitSimDiagram}
-              imgWidth="350px"
-              imgHeight="175px"
+              imgWidth="92%"
+              // imgHeight="60%"
               title="Transformer-based Qubit Simulator"
               description="
                   An encoder-only transformer is integrated into an open-quantum 
@@ -45,8 +45,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={QuantumSpace}
-              imgWidth="275px"
-              imgHeight="250px"
+              imgWidth="70%"
               title="Quantum Feature Space of Qubit in Arbitrary Bath"
               description="
                   This work shows that the quantum noise operators may be 
@@ -66,8 +65,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={GreyBoxArch}
-              imgWidth="350px"
-              imgHeight="225px"
+              imgWidth="85%"
               title="Machine Learning for High Fidelity Qubit Control"
               description="
                   My honours thesis extended a mathematical model of 
@@ -87,8 +85,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={QC_circuit_errors}
-              imgWidth="275px"
-              imgHeight="225px"
+              imgWidth="70%"
               title="PSO to Infer Quantum Computer Circuit Errors"
               description="
                 Quantum computer circuit error parameters were inferred using 
@@ -106,8 +103,7 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={perception}
-              imgWidth="225px"
-              imgHeight="225px"
+              imgWidth="60%"
               title="Developing Decentralised Resilience to Malicious Influence"
               description="
                 RL was used to optimise agent actions in a collective perception 
@@ -124,8 +120,8 @@ function Projects() {
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={patch}
-              imgWidth="325px"
-              imgHeight="225px"
+              imgWidth="90%"
+              // imgHeight="90%"
               title="Adversarial Patches to Camouflage Military Assets From CNNs"
               description="
                 Developed a unique method that produces imperceptible patches 

@@ -7,15 +7,15 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            I am Chris Wise from Canberra, Australia. I currently serve as a 
-            Royal Australian Air Force Officer. I have a Bachelor of Computing 
-            and Cyber Security (Honours) degree from the University of New South 
-            Wales. I am interested in reading and learning about AI, 
-            mathematics, computer science, and quantum physics. For my honours 
-            thesis, I investigated the application of machine learning to 
-            quantum computing. I am deeply fascinated by AI and want to use AI 
-            to accelerate science. My long-term goal is to work for start-up, 
+          <p className="about-paragraph">
+            I am Chris Wise from Canberra, Australia. I currently serve as a
+            Royal Australian Air Force Officer. I have a Bachelor of Computing
+            and Cyber Security (Honours) degree from the University of New South
+            Wales. I am interested in reading and learning about AI,
+            mathematics, computer science, and quantum physics. For my honours
+            thesis, I investigated the application of machine learning to
+            quantum computing. I am deeply fascinated by AI and want to use AI
+            to accelerate science. My long-term goal is to work for start-up,
             using AI for fusion, renewable energy, or longevity research.
             <br />
             <br />

@@ -31,6 +31,7 @@
   justify-content: center;
   align-items: center;
   height: 275px;
+  width: 100%;
   padding-top: 10px;
 }
 
@@ -75,4 +76,25 @@
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
+}
+
+/* Adjust padding for smaller screens */
+@media screen and (max-width: 768px) {
+  .project-card-view {
+    padding-bottom: 20px !important;
+  }
+
+  .project-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card-body .btn-primary {
+    margin-bottom: 10px;
+  }
+
+  .project-card-body .btn-primary + .btn-primary {
+    margin-left: 0;
+  }
 }

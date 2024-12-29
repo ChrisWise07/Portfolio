@@ -10,7 +10,7 @@
   --dark-background-colour: rgb(var(--dark-background-value), var(--dark-background-value), var(--dark-background-value));
   --custom-black: rgb(var(--black-value), var(--black-value), var(--black-value));
   --section-background-color: linear-gradient(to bottom right, var(--light-background-colour), var(--dark-background-colour));
-  --warning_orange:rgb(255, 126, 40) ;
+  --warning_orange: rgb(255, 126, 40);
 
 }
 
@@ -101,7 +101,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #f45050 !important;
+  background-color: var(--highlight-color) !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -144,16 +144,17 @@ button:focus {
   opacity: 0.9 !important;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: var(--custom-black) !important;
   }
 
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
+
 }
 
 .navbar-brand {
@@ -175,7 +176,7 @@ button:focus {
   padding: 0.8rem 1rem !important;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .nav-link {
     padding: 0.7rem 1rem !important;
   }
@@ -228,10 +229,12 @@ button:focus {
   padding-top: 80px !important;
 }
 
+
+
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/richard-horvath-_nWaeTF6qo0-unsplash.jpg);
+  background-image: var(--image-gradient), url(./Assets/home_page_bg.jpg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -243,8 +246,7 @@ button:focus {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
-  margin-left: 13% !important;
-  /* margin-right: 10% !important; */
+  margin: 0 5vw;
 }
 
 .heading {
@@ -254,51 +256,55 @@ button:focus {
 
 .heading-name {
   font-size: 2.5em !important;
-  padding-left: 45px !important;
+  padding-left: 45px;
+}
+
+.home-subtitle {
+  padding-top: 20px !important;
+  padding-left: 50px !important;
+  text-align: left !important;
+  color: var(--secondary-color) !important;
+}
+
+.home-img-div {
+  padding-bottom: 2vh !important;
+}
+
+@media screen and (max-width: 800px) {
+  .heading-name {
+    padding-left: 0px !important;
+    text-align: center !important;
+  }
+
+  .home-header {
+    padding-top: 0px !important;
+  }
+
+  .home-subtitle {
+    padding-left: 0px !important;
+    padding-top: 10px !important;
+    text-align: center !important;
+  }
+
+  .main-profile-img {
+    margin-left: 0vw !important;
+  }
+
+  .home-img-div {
+    padding-top: 2vh !important;
+    text-align: center !important;
+  }
+
 }
 
 .main-name {
   color: var(--highlight-color) !important;
 }
 
-.Typewriter__wrapper {
-  font-size: 2.2em !important;
-  color: #be6adf !important;
-  font-weight: 600 !important;
-}
 
-.Typewriter__cursor {
-  font-size: 2.4em !important;
-  color: #b562d6 !important;
-}
-
-@media (max-width: 767px) {
-  .Typewriter__wrapper {
-    font-size: 1.4em !important;
-    font-weight: 500 !important;
-    position: absolute !important;
-  }
-
-  .Typewriter__cursor {
-    display: none !important;
-  }
-}
-
-.myAvtar {
-  justify-content: center !important;
-  padding-top: 9em !important;
-}
-
-@media (max-width: 767px) {
-  .myAvtar {
-    padding-top: 2em !important;
-    padding-bottom: 2em !important;
-  }
-}
 
 .home-about-section {
   position: relative;
-  /* background-color: var(--dark-background-colour); */
   padding-bottom: 70px !important;
 }
 
@@ -376,6 +382,7 @@ button:focus {
   color: var(--highlight-color) !important;
 }
 
+
 /* --------- */
 /* Footer */
 /* --------- */
@@ -396,7 +403,7 @@ button:focus {
   font-size: 1.35em !important;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .footer-copywright {
     text-align: center !important;
   }
@@ -434,7 +441,6 @@ button:focus {
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
-  color: white !important;
 }
 
 .tech-icons {
@@ -452,8 +458,9 @@ button:focus {
 
 .quote-card-view {
   border: none !important;
-  color: white !important;
+  color: var(--off-white) !important;
   background-color: transparent !important;
+  text-align: "center" !important;
 }
 
 .about-activity {
@@ -462,10 +469,48 @@ button:focus {
   padding-left: 1px !important;
 }
 
-@media (max-width: 767px) {
-  .about-img {
-    padding-top: 0 !important;
+.about-paragraph {
+  text-align: justify !important;
+}
+
+@media screen and (max-width: 800px) {
+  .about-activity {
+    padding-left: 0px !important;
+    text-align: center !important;
   }
+
+  .quote-card-view {
+    text-align: center !important;
+  }
+
+  .about-paragraph {
+    text-align: center !important;
+  }
+  
+}
+
+.about-text-photo-row {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding-bottom: 4vh !important;
+}
+
+.about-img {
+  position: relative;
+  border-radius: 10px;
+  max-height: 550px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .about-text-photo-row {
+      flex-direction: column-reverse !important;
+    }
+
+    .about-section-img-div {
+      padding-bottom: 40px !important;
+    }
 }
 
 /* --------- */
@@ -494,7 +539,7 @@ button:focus {
   padding-left: 80px !important;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 800px) {
   .resume-left {
     padding-right: 15px !important;
     padding-left: 15px !important;
@@ -623,14 +668,10 @@ button:focus {
   position: relative;
   border-radius: 15px;
   box-shadow: 15px 15px 40px rgb(0, 0, 0, 0.9);
-  margin-left: 15%; 
+  margin-left: 5vw;
 }
 
-.about-img {
-  position: relative;
-  max-height: 500px;
-  border-radius: 10px;
-}
+
 
 .tool-icons a {
   color: var(--off-white);
@@ -648,7 +689,7 @@ button:focus {
   /* Smooth transition for transform and color */
 }
 
-.tool-icons:hover { 
+.tool-icons:hover {
   transform: scale(1.1);
   /* Scale the icons to 1.1 */
 }

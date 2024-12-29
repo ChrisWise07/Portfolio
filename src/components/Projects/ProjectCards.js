@@ -7,40 +7,59 @@ import { AiOutlineFilePdf } from "react-icons/ai";
 
 function ProjectCards(props) {
   return (
-    <Card 
+    <Card
       className={`project-card-view ${props.inProgress ? 'project-card-view-in-progress' : ''}`}
     >
       <div className="project-card-img-container">
         <Card.Img
-          variant="top"
           src={props.imgPath}
           alt="card-img"
-          style={{ height: props.imgHeight, width: props.imgWidth }}
+          style={{ height: props.imgHeight, width: props.imgWidth, maxHeight: "100%" }}
         />
       </div>
       <Card.Body>
         <Card.Title>{props.title} {props.inProgress && <span style={{ color: "var(--warning_orange)" }}>(In Progress)</span>}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
+        <Card.Text style={{ textAlign: "center" }}>
           {props.description}
         </Card.Text>
-        {props.ghLink && (
-          <Button variant="primary" href={props.ghLink} target="_blank">
-            <BsGithub /> &nbsp;
-            GitHub
-          </Button>
-        )}
-        {props.arxivLink && (
-          <Button variant="primary" href={props.arxivLink} target="_blank" style={{ marginLeft: "10px" }}>
-            <CgWebsite /> &nbsp;
-            arXiv
-          </Button>
-        )}
-        {props.pdfLink && (
-          <Button variant="primary" href={props.pdfLink} target="_blank" style={{ marginLeft: "10px" }}>
-            <AiOutlineFilePdf /> &nbsp;
-            PDF
-          </Button>
-        )}
+        <div style={{
+          display: "flex",
+          justifyContent: "center",
+          flexWrap: "wrap",
+          gap: "10px"
+        }}
+        >
+          {props.ghLink && (
+            <Button variant="primary" href={props.ghLink} target="_blank">
+              <BsGithub /> &nbsp;
+              GitHub
+            </Button>
+          )}
+          {props.arxivLink && (
+            <Button
+              variant="primary"
+              href={props.pdfLink}
+              target="_blank"
+              style={{
+              }}
+            >
+              <CgWebsite /> &nbsp;
+              arXiv
+            </Button>
+          )}
+          {props.pdfLink && (
+            <Button
+              variant="primary"
+              href={props.pdfLink}
+              target="_blank"
+              style={{
+              }}
+            >
+              <AiOutlineFilePdf /> &nbsp;
+              PDF
+            </Button>
+          )}
+        </div>
       </Card.Body>
     </Card>
   );
