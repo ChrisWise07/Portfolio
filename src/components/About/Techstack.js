@@ -11,7 +11,7 @@ import { FaRobot, FaNetworkWired } from "react-icons/fa";
 
 function LanguageProficiencies() {
   return (
-    <Row xs={3} sm={3} md={5} className="flip-card-row" style={{ paddingBottom: "50px" }}>
+    <Row xs={4} sm={4} md={5} className="flip-card-row" style={{ paddingBottom: "50px" }}>
       <Col className="tech-icons d-flex justify-content-center align-items-center">
         <FlipCard icon={<DiPython />} text="Python" textSize="45%" />
       </Col>

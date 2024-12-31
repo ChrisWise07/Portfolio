@@ -6,7 +6,7 @@ import { GiWeightLiftingUp } from "react-icons/gi";
 
 function SoftSkills() {
   return (
-    <Row xs={3} sm={3} md={5} className="flip-card-row" style={{ paddingBottom: "50px" }}>
+    <Row xs={4} sm={4} md={5} className="flip-card-row" style={{ paddingBottom: "50px" }}>
       <Col className="tech-icons d-flex justify-content-center align-items-center">
         <FlipCard icon={<FaFlag />} text="Leadership" textSize="35%" />
       </Col>
