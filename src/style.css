@@ -144,7 +144,7 @@ button:focus {
   opacity: 0.9 !important;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
@@ -176,7 +176,7 @@ button:focus {
   padding: 0.8rem 1rem !important;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .nav-link {
     padding: 0.7rem 1rem !important;
   }
@@ -270,7 +270,7 @@ button:focus {
   padding-bottom: 2vh !important;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .heading-name {
     padding-left: 0px !important;
     text-align: center !important;
@@ -403,7 +403,7 @@ button:focus {
   font-size: 1.35em !important;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .footer-copywright {
     text-align: center !important;
   }
@@ -445,8 +445,13 @@ button:focus {
 
 .tech-icons {
   font-size: 4.5em !important;
-  margin: 15px !important;
-  padding: 10px !important;
+  /* margin: 15px !important; */
+  /* padding: 10px !important; */
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex !important;
+  align-self: center !important;
+  align-content: center !important;
   opacity: 0.93 !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -454,6 +459,13 @@ button:focus {
   display: table !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+}
+
+@media screen and (max-width: 768px) {
+  .tech-icons {
+    font-size: 13vw !important;
+  }
+  
 }
 
 .quote-card-view {
@@ -473,7 +485,7 @@ button:focus {
   text-align: justify !important;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .about-activity {
     padding-left: 0px !important;
     text-align: center !important;
@@ -539,7 +551,7 @@ button:focus {
   padding-left: 80px !important;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .resume-left {
     padding-right: 15px !important;
     padding-left: 15px !important;

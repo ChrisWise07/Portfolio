@@ -11,45 +11,45 @@ import { FaRobot, FaNetworkWired } from "react-icons/fa";
 
 function LanguageProficiencies() {
   return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <FlipCard icon={<DiPython />} text="Python" textSize="0.5em" />
+    <Row xs={3} sm={3} md={5} className="flip-card-row" style={{ paddingBottom: "50px" }}>
+      <Col className="tech-icons d-flex justify-content-center align-items-center">
+        <FlipCard icon={<DiPython />} text="Python" textSize="45%" />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FlipCard icon={<DiLinux />} text="Linux CLI" textSize="0.5em" />
+      <Col className="tech-icons d-flex justify-content-center align-items-center">
+        <FlipCard icon={<DiLinux />} text="Linux CLI" textSize="45%" />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FlipCard icon={<SiGnubash />} text="Bash" textSize="0.5em" />
+      <Col className="tech-icons d-flex justify-content-center align-items-center">
+        <FlipCard icon={<SiGnubash />} text="Bash" textSize="45%" />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FlipCard icon={<DiGit />} text="Git" textSize="0.5em" />
+      <Col className="tech-icons d-flex justify-content-center align-items-center">
+        <FlipCard icon={<DiGit />} text="Git" textSize="45%" />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FlipCard icon={<AiOutlineConsoleSql />} text="SQL" textSize="0.5em" />
+      <Col className="tech-icons d-flex justify-content-center align-items-center">
+        <FlipCard icon={<AiOutlineConsoleSql />} text="SQL" textSize="45%" />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FlipCard icon={<DiJavascript1 />} text="JavaScript" textSize="0.5em" />
+      <Col className="tech-icons d-flex justify-content-center align-items-center">
+        <FlipCard icon={<DiJavascript1 />} text="JavaScript" textSize="45%" />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FlipCard icon={<DiReact />} text="React" textSize="0.5em" />
+      <Col className="tech-icons d-flex justify-content-center align-items-center">
+        <FlipCard icon={<DiReact />} text="React" textSize="45%" />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FlipCard icon={<DiJava />} text="Java" textSize="0.5em" />
+      <Col className="tech-icons d-flex justify-content-center align-items-center">
+        <FlipCard icon={<DiJava />} text="Java" textSize="45%" />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FlipCard icon={<CgCPlusPlus />} text="C++" textSize="0.8em" />
+      <Col className="tech-icons d-flex justify-content-center align-items-center">
+        <FlipCard icon={<CgCPlusPlus />} text="C++" textSize="70%" />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FlipCard icon={<SiC />} text="C" textSize="1.0em" />
+      <Col className="tech-icons d-flex justify-content-center align-items-center">
+        <FlipCard icon={<SiC />} text="C" textSize="100%" />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FlipCard icon={<DiAtom />} text="Quantum Computing" textSize="0.4em" />
+      <Col className="tech-icons d-flex justify-content-center align-items-center">
+        <FlipCard icon={<DiAtom />} text="Quantum Computing" textSize="45%" />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FlipCard icon={<FaRobot />} text="AI & ML" textSize="0.5em" />
+      <Col className="tech-icons d-flex justify-content-center align-items-center">
+        <FlipCard icon={<FaRobot />} text="AI & ML" textSize="45%" />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <FlipCard icon={<FaNetworkWired />} text="Networking" textSize="0.4em" />
+      <Col className="tech-icons d-flex justify-content-center align-items-center">
+        <FlipCard icon={<FaNetworkWired />} text="Networking" textSize="45%" />
       </Col>
     </Row>
   );
