@@ -38,7 +38,7 @@ function ProjectCards(props) {
           {props.arxivLink && (
             <Button
               variant="primary"
-              href={props.pdfLink}
+              href={props.arxivLink}
               target="_blank"
               style={{
               }}
