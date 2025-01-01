@@ -61,6 +61,9 @@
   border-width: 2px !important;
   border-radius: 5px !important;
   width: 110px;
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex !important;
 }
 
 .btn-primary:hover {
